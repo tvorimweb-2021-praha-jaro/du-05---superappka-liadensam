@@ -24,10 +24,237 @@ body {
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
-    margin: 0 auto; /* pruh je na stránce vycentrovaný */
-    background: white;
+    width: 960px;
+    margin: 0 auto;
+    background: #FFFFFF;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
-/* ----- zde začni psát vlastní CSS ----- */
+h1,
+h3,
+p {
+    margin: 0;
+}
+
+.menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu_1 {
+  text-transform: uppercase;
+}
+
+
+.main h1 {
+  font-size: 4.5rem;
+  font-weight: 400;
+}
+
+.main ul{
+  list-style-type: none;
+}
+
+.details h3 {
+    color: #48418e;
+}
+
+.menu {
+  display: flex;
+  line-height: normal;
+}
+
+.menu ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.menu li {
+  padding: 0.5rem;
+  flex-basis: 50%;
+}
+
+.menu a {
+  color: #48418e;
+  text-decoration: none;
+  font-size: 0.8rem;
+  font-weight: 300;
+  padding: 0.5rem;
+}
+
+.menu a:hover {
+  color: #25133d;
+  font-weight: 700;
+}
+
+.main {
+  background-image: url(images/pozadi.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: #FFFFFF;
+  text-shadow: 1px black;
+  padding: 1rem;
+}
+
+.main p {
+  font-weight: 300;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+
+.main a {
+  color: #FFFFFF;
+  text-decoration: none;
+  font-weight: 100;
+  width: 18rem;
+  padding: 1rem 0;
+  margin: 1rem 0;
+  border: 0.5px solid white;
+  border-radius: 1rem;
+  background-color: transparent;
+  box-shadow: 0 4px 10px rgba(37,19,61,0.5);
+  text-decoration: none;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+.main img {
+  display: none;
+}
+
+.main_ 1 {
+  background-color: transparent;
+  font-size: 0.5rem;
+}
+.main_1:hover {
+  background-color: #48418e;
+  border: none;
+}
+
+.main_2 {
+  background-color: transparent;
+  font-size: 0.5rem;
+}
+
+.main_2:hover {
+  background-color: #48418e;
+  border: none;
+}
+
+img {
+  width: 10%;
+  height: 10%;
+  margin: 1rem;
+ }
+ 
+ .details {
+     text-align: center;
+     padding: 1rem 1rem 2rem 1rem;
+ }
+ 
+ 
+ footer {
+     background-color: #48418e;
+     color: white;
+     text-align: center;
+     padding: 0.5rem;
+ }
+
+ @media screen and (min-width: 350px) {
+
+  .menu ul {
+      display: flex;     
+      flex-wrap: nowrap;
+      white-space: nowrap;
+  }   
+  .menu a {
+      font-size: 1rem;
+  }
+  .main h1 {
+      font-size: 3.2rem;
+  }
+
+  .main p {
+      font-size: 2.2rem;
+      margin: 0 0 2rem 0;
+  }
+  .main ul {
+      display: flex;
+  }
+
+  .main li {
+      margin-right: 1rem;
+  }
+
+  .main a {
+      padding: 0.5rem 1.3rem;
+      font-size: 1rem;
+  }
+  
+  .details { 
+      display: flex;
+  }
+
+  .details p {
+      padding: 0 1rem;
+  }
+
+  img {
+      height: 15%;
+      width: 15%; 
+  }
+}
+
+
+@media screen and (min-width:700px) {
+  .main {
+      position: relative;
+  }
+
+  .main img {
+     display: block;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      height: 100%;
+      width: auto;
+      margin: 0;
+  }
+
+  .main p {
+      width: 500px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .main h1 {
+      font-size: 4.5rem;
+      font-weight: 500;
+  }
+  .main {
+      position: relative;
+  }
+
+  .main img {
+      display: block;
+
+      
+  }
+  .main p {
+      font-size: 2.5rem;
+  }
+
+  .main a {
+      font-size: 1.5rem;
+      padding: 0.5rem 2rem;
+  }   
+  img {
+      height: 20%;
+      width: 20%; 
+  }
+
+
+}
+ 
