@@ -12,47 +12,59 @@
 
 <body>
   <div class="obal">
-    <nav class="menu">
-      <ul>
-        <li><a class="menu_1" href="#">Super Appka</a></li>
-        <li><a href="#">Úžasný design</a></li>
-        <li><a href="#">Boží funkce</a></li>
-        <li><a href="#">Zdarma ke stažení</a></li>
-      </ul>
-    </nav>
+    <header class="header">
+      <nav class="navigation">
+        <a class="navigation-main" href="#">Super Appka</a>
+        <a href="#">Úžasný design</a>
+        <a href="#">Boží funkce</a>
+        <a href="#">Zdarma ke stažení</a>
+      </nav>
+    </header>
 
-    <section class="main">
-      <h1>Super Appka</h1>
-      <p>Úžasná mobilní aplikace, <br>která Ti změní život.</p>
-      <img src="images/telefon.png" alt="telefon">
-      <ul>
-        <li><a class="main_1" href="">Stáhnout zdarma</a></li>
-        <li><a class="main_2" href="">Více informací</a></li>
-      </ul>
-    </section>
+    <main class="teaser">
+      <div class="intro">
+        <h1 class="super_appka">Super Appka</h1>
+        <p class="slogan">Úžasná mobilní aplikace, <br>která Ti změní život.</p>
+        <div class="buttons">
+          <a class="button button_zdarma" href="#">
+            <p>Stáhnout zdarma</p>
+          </a>
+          <a class="button button_info" href="#">
+            <p>Více informací</p>
+          </a>
+        </div>
+      </div>
+      <img class="phone" src="images/telefon.png" alt="telefon" width="405" height="400">
+    </main>
 
     <section class="details">
-      <article>
-        <h3>Cestuj po světě</h3>
-        <img class="icon" src="images/letadlo.svg" alt="letadlo" width="80" height="80">
+      <article class="text">
+        <div class="logo">
+          <h3>Cestuj po světě</h3>
+          <img class="icon" src="images/letadlo.svg" alt="letadlo" width="80" height="80">
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet nobis voluptas aspernatur neque ea molestias dicta excepturi illo, laudantium officiis dolorem quam exercitationem dolore. Illum consequuntur et nemo nostrum?</p>
       </article>
 
-      <article>
-        <h3>Chatuj s přáteli</h3>
-        <img class="icon" src="images/bubliny.svg" alt="bubliny" width="80" height="80">
+      <article class="text">
+        <div class="logo">
+          <h3>Chatuj s přáteli</h3>
+          <img class="icon" src="images/bubliny.svg" alt="bubliny" width="80" height="80">
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet nobis voluptas aspernatur neque ea molestias dicta excepturi illo, laudantium officiis dolorem quam exercitationem dolore. Illum consequuntur et nemo nostrum?</p>
       </article>
 
-      <article>
-        <h3>Zažij dobrodružství</h3>
-        <img class="icon" src="images/mapa.svg" alt="mapa" width="80" height="80">
+      <article class="text">
+        <div class="logo">
+          <h3>Zažij dobrodružství</h3>
+          <img class="icon" src="images/mapa.svg" alt="mapa" width="80" height="80">
+        </div>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Est amet nobis voluptas aspernatur neque ea molestias dicta excepturi illo, laudantium officiis dolorem quam exercitationem dolore. Illum consequuntur et nemo nostrum?</p>
       </article>
     </section>
 
     <footer>
-      ©2016, Web od A do Z
+      <p class="copyright">©2016, Web od A do Z</p>
     </footer>
 
   </div>
